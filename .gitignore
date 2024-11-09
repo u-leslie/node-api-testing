@@ -1,0 +1,6 @@
+# Ignore node_modules folder
+node_modules/
+
+# Ignore environment variable files
+.env
+.env.*  # in case you have multiple env files, like .env.development, .env.test, etc.
