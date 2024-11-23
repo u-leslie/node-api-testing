@@ -3,9 +3,9 @@ const app = require("../../src/app");
 const mongoose = require("mongoose");
 
 describe("User Routes", () => {
-  afterAll(async () => {
-    await mongoose.connection.close();
-  });
+  // afterAll(async () => {
+  //   await mongoose.connection.close();
+  // });
 
   it("should create and fetch a user", async () => {
     const createUserRes = await request(app)
