@@ -7,7 +7,7 @@ describe("User Controller", () => {
     const res = await request(app)
       .post("/api/users")
       .send({ name: "Alice", email: "alice@gmail.com" });
-
+    console.log("Response:", res.body);
     expect(res.statusCode).toBe(201);
     expect(res.body.name).toBe("Alice");
   });

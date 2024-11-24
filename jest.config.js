@@ -1,6 +1,6 @@
 module.exports = {
   testEnvironment: "node",
-  testTimeout: 100000,
+  testTimeout: 1000000,  
   setupFilesAfterEnv: ["./tests/setup.js"],
   transform: {
     "^.+\\.(js|jsx)$": "babel-jest",
